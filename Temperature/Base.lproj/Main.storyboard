@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Temperature" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Temperature in celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og6-rF-aXD">
+                                <rect key="frame" x="62" y="40" width="290" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cyK-tc-Qc4">
+                                <rect key="frame" x="158" y="109" width="98" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGz-7R-CFP">
+                                <rect key="frame" x="19.999999999999993" y="310" width="104.33333333333331" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Fahrenheit"/>
+                                <connections>
+                                    <action selector="fahrenBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zhm-Q9-Fue"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9V-Pf-3RI">
+                                <rect key="frame" x="324.66666666666669" y="310" width="69.333333333333314" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kelvin"/>
+                                <connections>
+                                    <action selector="kelvinBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNg-My-WMS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drk-Ha-32f">
+                                <rect key="frame" x="186" y="461" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v9V-Pf-3RI" secondAttribute="trailing" constant="20" id="078-qA-7HH"/>
+                            <constraint firstItem="drk-Ha-32f" firstAttribute="top" secondItem="cyK-tc-Qc4" secondAttribute="bottom" constant="318" id="4b8-P9-pqd"/>
+                            <constraint firstItem="UGz-7R-CFP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IeI-Oc-t08"/>
+                            <constraint firstItem="UGz-7R-CFP" firstAttribute="top" secondItem="og6-rF-aXD" secondAttribute="bottom" constant="241" id="Jpi-kL-yMi"/>
+                            <constraint firstItem="drk-Ha-32f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LTb-dq-LbH"/>
+                            <constraint firstItem="cyK-tc-Qc4" firstAttribute="top" secondItem="og6-rF-aXD" secondAttribute="bottom" constant="40" id="PBE-fp-0CR"/>
+                            <constraint firstItem="cyK-tc-Qc4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="URm-eW-xBe"/>
+                            <constraint firstItem="og6-rF-aXD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a1U-rz-jG5"/>
+                            <constraint firstItem="og6-rF-aXD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="bnl-Ed-vP8"/>
+                            <constraint firstItem="og6-rF-aXD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="qG0-qc-fEz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cyK-tc-Qc4" secondAttribute="trailing" constant="158" id="qgj-gQ-0dl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="og6-rF-aXD" secondAttribute="trailing" constant="62" id="vs5-rX-dTT"/>
+                            <constraint firstItem="v9V-Pf-3RI" firstAttribute="top" secondItem="og6-rF-aXD" secondAttribute="bottom" constant="241" id="zXx-r8-EJj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLbl" destination="drk-Ha-32f" id="Xs9-cU-ZGd"/>
+                        <outlet property="tempTxt" destination="cyK-tc-Qc4" id="EJA-mC-0YR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
